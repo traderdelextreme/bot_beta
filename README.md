@@ -13,3 +13,9 @@ Prérequis pour le projet :
 pip3 install pandas 
 
 pip3 install python-bittrex
+
+Dossier :
+- Watch : requetage et nettoyage des données
+- Compute : analyse des données
+- Serve : passage d'ordre et gestion des fonds
+- Indicator : indicateur boursiers
