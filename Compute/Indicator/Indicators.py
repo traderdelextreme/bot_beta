@@ -3,7 +3,7 @@ import pandas as pd
 On va placer ici les indicateurs boursiers
 """
 
-def ema(df, n):
+def ema(df, n, name_column):
     """
     :param df: données OCHL
     :param n: période de calcul
@@ -12,7 +12,7 @@ def ema(df, n):
     :return: données OCHL + Moyenne mobile
     :rtype: DataFrame
     """
-    price = df['C']
+    price = df[name_column]
     price.fillna(method='ffill', inplace=True)
     price.fillna(method='bfill', inplace=True)
     ema = pd.Series(price.ewm(span=n, min_periods=n).mean(), name='EMA_{}'.format(n))
