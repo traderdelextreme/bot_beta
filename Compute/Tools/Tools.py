@@ -1,6 +1,6 @@
 import pandas as pd
 """
-On va placer ici les indicateurs boursiers
+On va placer ici les les outils mathématiques
 """
 
 def ema(df, n, name_column):
