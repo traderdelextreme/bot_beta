@@ -30,8 +30,10 @@ Exemple : Big Data, détection de patern, macd+mm200, macd+rsi ...
 
    - Indicator : indicateur boursiers utilisés dans les models
 
-   exemple : RSI, macd zerolag, pattern, divergence ...
+   Exemple : RSI, macd zerolag, pattern, divergence ...
     (Pour l'instant : macd)
 
 - Serve : passage d'ordre et gestion des fonds
 (Pour l'instant : Simple print d'achat et de vente)
+
+Exemple : Envoie de mail, achat direct sur la plateforme
