@@ -1,0 +1,4 @@
+follow_up : { rate : 00, offset : 00, volume}, stoploss : { rate : 00, volume : 00 }
+follow_down : { rate : 00, offset : 00, volume}
+buy : { rate : 00, volume : 00}
+sell : { rate : 00, volume : 00}

@@ -66,6 +66,10 @@ class Bittrex_acquisition:
         df = df.set_index(pd.DatetimeIndex(df['date']))
         del df['date']
         del df['T']
+        del df['BV']
+
+        df.rename(columns={'C': 'Close', 'H':'High', 'L':'Low', 'V':'Volume', 'O':'Open'}, inplace=True)
+
         self.data = df
         print("[+] Données initialisées")
         self.save()
@@ -75,7 +79,7 @@ class Bittrex_acquisition:
         """
         Renvoie les données
 
-        :return: dataFrame (index : date, BV, C, H, L, O, T, V)
+        :return: dataFrame (index : date, BV, Close, High, Low, O, Volume)
         """
         return self.data
 
@@ -97,6 +101,9 @@ class Bittrex_acquisition:
         data_temp = data_temp.set_index(pd.DatetimeIndex(data_temp['date']))
         del data_temp['date']
         del data_temp['T']
+        del data_temp['BV']
+
+        data_temp.rename(columns={'C': 'Close', 'H': 'High', 'L': 'Low', 'V': 'Volume', 'O': 'Open'}, inplace=True)
 
         data = self.data
         data = data.iloc[-1:]

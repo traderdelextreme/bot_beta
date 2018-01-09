@@ -1,0 +1,13 @@
+voir stoploss dans followup
+intégrer les fees
+voir les annulations des stoploss quand un ordre est recouvert
+stop loss de 10 %, on revend pas tant qu'on est perdant
+recherche de sinusoide, + decouverte des droites de tendance
+on regarde ou est le dernier minimum pret de la bande de bollinger, si on est pret de la bande de bollinger avec ce minimum, on followdown
+On met un followup à partir de la moyenne du bollinger,
+
+-On regarde le dernier minimum en dessous de la moitié de la bande du bollinger, on achete si on followdown si on le dépasse, stoploss avec la distance le la moyenne du bollinger, followup à la moitié haute du bollinger.
+
+-Droite de tendance à deux points, si les deux derniers minimums forment une droite de tendance plate, on achete si on est en-dessous de la moitié du bollinger
+
+-Droite de tendance à trois points, on rebondit si on est en-dessous de la moitié basse du bollinger
